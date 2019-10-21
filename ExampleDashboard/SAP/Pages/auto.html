@@ -1,0 +1,20 @@
+﻿<div ng-controller="autoController">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Márka</th>
+                <th scope="col">Típus</th>
+                <th scope="col">Rendszám</th>
+            </tr>
+        </thead>
+        <tbody ng-repeat="item in autos.data">
+                <tr>
+                    <th scope="row"></th>
+                    <td>{{item.Make}}</td>
+                    <td>{{item.Model}}</td>
+                    <td>{{item.PlateNumber}}</td>
+                </tr>
+        </tbody>
+    </table>
+</div>
